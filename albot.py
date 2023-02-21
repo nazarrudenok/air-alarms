@@ -316,4 +316,8 @@ def start(message):
 
         sleep(12)
 
+@bot.message_handler(commands=['a'])
+def a(message):
+    bot.send_message(message.chat.id, 'aaa')
+
 bot.polling(none_stop=True)
